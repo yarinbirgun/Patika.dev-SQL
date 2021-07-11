@@ -61,3 +61,39 @@ insert into employee (id, name, birthday, email) values (47, 'Margaretha', '2020
 insert into employee (id, name, birthday, email) values (48, 'Cass', '2021-06-26', 'cseward1b@github.com');
 insert into employee (id, name, birthday, email) values (49, 'Charleen', '2020-07-29', 'cdepaoli1c@mayoclinic.com');
 insert into employee (id, name, birthday, email) values (50, 'Meridel', '2021-01-17', 'mbysouth1d@macromedia.com');
+
+
+3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+UPDATE employe SET name = 'Zeki'
+WHERE id = 1 ;
+
+UPDATE employee SET email = 'zeki@muren.com'
+WHERE name = 'Zeki';
+
+UPDATE employee SET birthday = '1931-12-06'
+WHERE name = 'Zeki';
+
+UPDATE employee SET birthday = '1993-12-01', name = 'Memati'
+WHERE email = 'bclayson17@house.gov';
+
+UPDATE employee SET name = 'Memati', birthday = ' 1993-12-01'
+WHERE id = 12 ; 
+
+
+4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+DELETE FROM employee
+WHERE name = 'Willy';
+
+DELETE FROM employee
+WHERE name = 'Niccolo';
+
+DELETE FROM employee
+WHERE email = 'msazio4@adobe.com';
+
+DELETE FROM employee
+WHERE birthday = '2020-10-18';
+
+DELETE FROM employee
+WHERE id = 14 ;
